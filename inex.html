@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Gaida!</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #fff0f5;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff69b4, #ffb6c1);
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #fffafc;
+    }
+
+    .icons {
+      font-size: 2em;
+      margin: 15px 0;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: #ff69b4;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff1493;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="icons">🎉🎂💖</div>
+    <h1>Selamat Ulang Tahun Gaida Layyina Afifah Robbani!</h1>
+    <p>Semoga panjang umur, sehat selalu, dan makin gemesin tiap hari! 🥳💝</p>
+  </header>
+
+  <section>
+    <h2>Kamu suka ucapan ini gak? 😆</h2>
+    <div class="btn-container">
+      <button class="btn" onclick="kirimPesan('Makasih ya, lucu banget! 😍')">Makasih</button>
+      <button class="btn" onclick="kirimPesan('Aduh... ga like banget 😅')">Ga Like Banget</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 dari Rayhan buat Gaida 🎈
+  </footer>
+
+  <script>
+    function kirimPesan(pesan) {
+      const noWa = "6285779494022";
+      const url = `https://wa.me/${noWa}?text=${encodeURIComponent(pesan)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>
